@@ -1,0 +1,74 @@
+{
+  "progressions": {
+    "ewh": {
+      "sections": {
+        "TMM_Stenzel": {
+          "displayName": "Stenzel Mfg Expansion",
+          "deliveryPhases": [
+            {
+              "cost": 750,
+              "deliveries": [
+                {
+                  "direction": 0,
+                  "count": 1,
+                  "load": "building-supplies",
+                  "carTypeFilter": "XM*"
+                },
+                {
+                  "direction": 1,
+                  "count": 2,
+                  "load": "debris",
+                  "carTypeFilter": "GB*"
+                },
+                {
+                  "direction": 0,
+                  "count": 2,
+                  "load": "ballast",
+                  "carTypeFilter": "GS*"
+                },
+                {
+                  "carTypeFilter": "FM*",
+                  "count": 1,
+                  "load": "ties",
+                  "direction": 0
+                },
+                {
+                  "carTypeFilter": "FM*",
+                  "count": 1,
+                  "load": "rails",
+                  "direction": 0
+                }
+              ],
+              "industryComponent": "whittier-stenzel.site"
+            }
+          ],
+          "enableFeaturesOnUnlock": {
+            "TMM_Stenzel": true
+          },
+          "prerequisiteSections": {},
+          "description": "Stenzel Mfg. in Whittier wants to expand their production, in order to do so they need you to build a second track at their company."
+        }
+      }
+    }
+  },
+  "mapFeatures": {
+    "TMM_Stenzel": {
+      "displayName": "Stenzel Mfg Expansion",
+      "name": "Stenzel Mfg Expansion",
+      "defaultEnableInSandbox": true,
+      "trackGroupsEnableOnUnlock": {
+        "TMM_Stenzel": true
+      },
+      "trackGroupsAvailableOnUnlock": {
+        "TMM_Stenzel": true
+      },
+      "unlockIncludeIndustryComponents": {
+        "whittier-stenzel.formula-high": true,
+        "whittier-stenzel.loader-scrap-metal": true,
+        "whittier-stenzel.loader-mow-machinery": true,
+        "whittier-stenzel.loader-farming-machinery": true,
+        "whittier-stenzel.loader-bridge-section": true
+      }
+    }
+  }
+}

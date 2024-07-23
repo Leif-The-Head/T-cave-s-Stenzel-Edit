@@ -1,0 +1,261 @@
+{
+	"nodes": {
+		"Ne1w": {
+			"position": {
+				"x": 12254.6572,
+				"y": 561.315,
+				"z": 5861.796
+			},
+			"rotation": {
+				"x": 0.0,
+				"y": 202.367981,
+				"z": 0.0
+			},
+			"flipSwitchStand": true
+		},
+		"N6an": {
+			"position": {
+				"x": 12246.7588,
+				"y": 561.315,
+				"z": 5846.633
+			},
+			"rotation": {
+				"x": 0.0,
+				"y": 211.8868,
+				"z": 0.0
+			},
+			"flipSwitchStand": false
+		},
+		"fa7228": {
+			"position": {
+				"x": 12195.213882709311,
+				"y": 561.9,
+				"z": 5778.788208652507
+			},
+			"rotation": {
+				"x": 0.8,
+				"y": 22.3765888,
+				"z": 0.0
+			},
+			"flipSwitchStand": false
+		},
+		"NTMM_Stenzel_Mfg_crossing_00": {
+			"position": {
+				"x": 12233.0479,
+				"y": 561.4,
+				"z": 5828.367
+			},
+			"rotation": {
+				"x": 0.0,
+				"y": 220.399887,
+				"z": 0.0
+			},
+			"flipSwitchStand": false
+		},
+		"NTMM_Stenzel_Mfg_crossing_01": {
+			"position": {
+				"x": 12223.9385,
+				"y": 561.480042,
+				"z": 5818.00342
+			},
+			"rotation": {
+				"x": 0.0,
+				"y": 221.640182,
+				"z": 0.0
+			},
+			"flipSwitchStand": true
+		},
+		"NTMM_Stenzel_Mfg_track_B1_0": {
+			"position": {
+				"x": 12199.83827365374,
+				"y": 561.9,
+				"z": 5776.886891618124
+			},
+			"rotation": {
+				"x": 0.8,
+				"y": 22.3765888,
+				"z": 0.0
+			},
+			"flipSwitchStand": false
+		},
+		"NTMM_Stenzel_Mfg_track_B1_1": {
+			"position": {
+				"x": 12184.98869101722,
+				"y": 562.3,
+				"z": 5740.769682635688
+			},
+			"rotation": {
+				"x": 0.0,
+				"y": 22.37658885,
+				"z": 0.0
+			},
+			"flipSwitchStand": false
+		}
+	},
+	"segments": {
+		"Sgov": {
+			"startId": "NTMM_Stenzel_Mfg_crossing_00"
+		},
+		"STMM_Stenzel_Mfg_track_B1_0": {
+			"style": "Standard",
+			"trackClass": "Mainline",
+			"startId": "NTMM_Stenzel_Mfg_crossing_01",
+			"endId": "NTMM_Stenzel_Mfg_track_B1_0",
+			"priority": 0,
+			"speedLimit": 0,
+			"groupId": "TMM_Stenzel"
+		},
+		"STMM_Stenzel_Mfg_track_B1_1": {
+			"style": "Standard",
+			"trackClass": "Mainline",
+			"startId": "NTMM_Stenzel_Mfg_track_B1_0",
+			"endId": "NTMM_Stenzel_Mfg_track_B1_1",
+			"priority": 0,
+			"speedLimit": 0,
+			"groupId": "TMM_Stenzel"
+		},
+		"STMM_Stenzel_Mfg_track_B2_0": {
+			"style": "Standard",
+			"trackClass": "Mainline",
+			"startId": "NTMM_Stenzel_Mfg_crossing_01",
+			"endId": "fa7228",
+			"priority": 0,
+			"speedLimit": 0,
+			"groupId": ""
+		},
+		"STMM_Stenzel_Mfg_Crossing_0": {
+			"style": "Standard",
+			"trackClass": "Mainline",
+			"startId": "NTMM_Stenzel_Mfg_crossing_00",
+			"endId": "NTMM_Stenzel_Mfg_crossing_01",
+			"priority": 0,
+			"speedLimit": 0,
+			"groupId": ""
+		}
+	},
+	"spans": {
+		"Pprf": {
+			"upper": {
+				"segmentId": "q06god",
+				"distance": 0.0,
+				"end": "End"
+			},
+			"lower": {
+				"segmentId": "STMM_Stenzel_Mfg_track_B2_0",
+				"distance": 40.8,
+				"end": "Start"
+			}
+		},
+		"PTMM-Whittier-Stenzel-BB1": {
+			"upper": {
+				"segmentId": "STMM_Stenzel_Mfg_track_B1_1",
+				"distance": 0.0,
+				"end": "End"
+			},
+			"lower": {
+				"segmentId": "STMM_Stenzel_Mfg_track_B1_0",
+				"distance": 40.0,
+				"end": "Start"
+			}
+		}
+	},
+	"areas": {
+		"whittier": {
+			"industries": {
+				"whittier-stenzel": {
+					"components": {
+            "unloader": {
+              "carTransferRate": 600000.0
+            },
+            "formula-high": {
+              "type": "Model.OpsNew.FormulaicIndustryComponent",
+              "name": "Stenzel Mfg",
+              "trackSpans": [],
+              "carTypeFilter": "",
+              "sharedStorage": true,
+              "inputTermsPerDay": {
+                "boxcar-metal-stock": 100000.0
+              },
+              "outputTermsPerDay": {
+                "farming-machinery": 50000.0,
+                "bridge-section": 10000.0,
+                "mow-machinery": 20000.0,
+                "boxcar-parts": 30000.0,
+                "scrap-metal": 10000.0
+              }
+            },
+						"loader-farming-machinery": {
+							"type": "Model.OpsNew.IndustryLoader",
+							"name": "Stenzel Mfg BB1",
+							"trackSpans": [
+								"PTMM-Whittier-Stenzel-BB1"
+							],
+							"carTypeFilter": "XM*,FM*",
+							"sharedStorage": true,
+							"loadId": "farming-machinery",
+							"storageChangeRate": 0.0,
+							"maxStorage": 100000.0,
+							"orderAroundEmpties": true,
+							"carTransferRate": 100000.0,
+							"orderAroundLoaded": true
+						},
+						"loader-bridge-section": {
+							"type": "Model.OpsNew.IndustryLoader",
+							"name": "Stenzel Mfg BB1",
+							"trackSpans": [
+								"PTMM-Whittier-Stenzel-BB1"
+							],
+							"carTypeFilter": "FM*",
+							"sharedStorage": true,
+							"loadId": "bridge-section",
+							"storageChangeRate": 0.0,
+							"maxStorage": 100000.0,
+							"orderAroundEmpties": true,
+							"carTransferRate": 200000.0,
+							"orderAroundLoaded": true
+						},
+						"loader-scrap-metal": {
+							"type": "Model.OpsNew.IndustryLoader",
+							"name": "Stenzel Mfg BB2",
+							"trackSpans": [
+								"Pprf"
+							],
+							"carTypeFilter": "HM,HT",
+							"sharedStorage": true,
+							"loadId": "scrap-metal",
+							"storageChangeRate": 0.0,
+							"maxStorage": 100000.0,
+							"orderAroundEmpties": true,
+							"carTransferRate": 200000.0,
+							"orderAroundLoaded": true
+						},
+						"loader-mow-machinery": {
+							"type": "Model.OpsNew.IndustryLoader",
+							"name": "Stenzel Mfg BB1",
+							"trackSpans": [
+								"PTMM-Whittier-Stenzel-BB1"
+							],
+							"carTypeFilter": "FM*",
+							"sharedStorage": true,
+							"loadId": "mow-machinery",
+							"storageChangeRate": 0.0,
+							"maxStorage": 100000.0,
+							"orderAroundEmpties": true,
+							"carTransferRate": 100000.0,
+							"orderAroundLoaded": true
+						},
+						"site": {
+							"name": "Stenzel Mfg BB2",
+							"type": "Model.OpsNew.ProgressionIndustryComponent",
+							"carTypeFilter": "*",
+							"sharedStorage": true,
+							"trackSpans": [
+								"Pprf"
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

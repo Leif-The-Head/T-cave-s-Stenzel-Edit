@@ -1,0 +1,32 @@
+{
+  "manifestVersion": 5,
+  "id": "Tcave.TcavesStenzelEdit",
+  "name": "T-cave's Stenzel Edit",
+  "version": "0.10.1",
+  "requires": [
+    {
+      "id": "railloader",
+      "notBefore": "1.7.2"
+    },
+    {
+      "id": "Zamu.StrangeCustoms",
+      "notBefore": "1.6.24103.2234"
+    },
+    {
+      "id": "NickB.TheStandardCatalogofLoadIDs",
+      "notBefore": "3.0"
+    },
+    {
+      "id": "AlinaNova21.AlinasMapMod",
+      "notBefore": "1.4"
+    }
+  ],
+  "conflictswith": [
+    "Tcave.TcavesMachiningAndManufacturing",
+    "hjp766.stenzelmfg"
+  ],
+  "mixintos": {
+    "game-graph": "file(TcavesStenzel.json)",
+    "progressions": "file(progressions.json)"
+  }
+}
